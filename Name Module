@@ -1,0 +1,8 @@
+import random
+
+def name():
+    pre = ['','','','cha', 'aga', 'cal', 'fal', 'tol', 'zum', 'ala', 'bal', 'nim', 'pup', 'tu', 'de', 'do', 'mon','er','sot','fum','ya','fus','','','']
+    mid = ['','','','lo', 'pu', 's', 'cum', 'fu', 'tog', 'bal', 'tha', 'tam', 'tu', 'o', 'th', 'u', 'e','h','is','cip','il','chu','geth',]
+    suf = ['','','','ter', 'zar', 'end', 'and', 'nog', 'pu', 'up', 'it', 'lot', 'fig', 'gon', 'bon','lo','ter','irus','ado',]
+    
+    print random.choice(pre) + random.choice(mid) + random.choice(suf)
