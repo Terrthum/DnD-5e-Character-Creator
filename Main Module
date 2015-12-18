@@ -1,0 +1,27 @@
+import random
+
+def roll():
+    stre = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
+    dex = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
+    const = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
+    intel = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
+    wis = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
+    char = random.randint(1, 6) + random.randint(1, 6) + random.randint(1, 6)
+
+    print ('Strength', stre)
+    print ('Dexterity', dex)
+    print ('Constitution', const)
+    print ('Intelligence', intel)
+    print ('Wisdom', wis)
+    print ('Charisma', char)
+    
+    classes = ['paladin', 'rogue', 'fighter', 'druid', 'barbarian', 'bard', 'cleric', 'monk', 'ranger', 'warlock', 'sorcerer', 'wizard']
+    
+    print random.choice(classes)
+    
+def name():
+    pre = ['','','','cha', 'aga', 'cal', 'fal', 'tol', 'zum', 'ala', 'bal', 'nim', 'pup', 'tu', 'de', 'do', 'mon','er','sot','fum','ya','fus','','','']
+    mid = ['','','','lo', 'pu', 's', 'cum', 'fu', 'tog', 'bal', 'tha', 'tam', 'tu', 'o', 'th', 'u', 'e','h','is','cip','il','chu','geth',]
+    suf = ['','','','ter', 'zar', 'end', 'and', 'nog', 'pu', 'up', 'it', 'lot', 'fig', 'gon', 'bon','lo','ter','irus','ado',]
+    
+    print random.choice(pre) + random.choice(mid) + random.choice(suf)
