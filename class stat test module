@@ -1,0 +1,47 @@
+from __future__ import print_function
+import random
+def roll():
+    #Rolls initial die for each number (4 numbers)
+    no1 = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)]
+    no2 = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)]
+    no3 = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)]
+    no4 = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)]
+    no5 = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)]
+    no6 = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)]
+
+    #Removes lowest number to increase general stats (now 3 numbers)
+    no1.remove(min(no1))
+    no2.remove(min(no2))
+    no3.remove(min(no3))
+    no4.remove(min(no4))
+    no5.remove(min(no5))
+    no6.remove(min(no6))
+
+    #Compiles into numbers to assign
+    no1work = no1[0] + no1[1] + no1[2]
+    no2work = no2[0] + no2[1] + no2[2]
+    no3work = no3[0] + no3[1] + no3[2]
+    no4work = no4[0] + no4[1] + no4[2]
+    no5work = no5[0] + no5[1] + no5[2]
+    no6work = no6[0] + no6[1] + no6[2]
+
+    #puts numbers into one list to use for configuration into classes
+    numberswork = [no1work, no2work, no3work, no4work, no5work, no6work]
+
+    #Now, We choose the class to assign traits to
+    classes = ['paladin', 'rogue', 'fighter', 'druid', 'barbarian', 'bard', 'cleric', 'monk', 'ranger', 'warlock', 'sorcerer', 'wizard']
+    classchoice = random.choice(classes)
+
+    #configures the traits. items, and spells to each class depending on the choice.
+    if classchoice == 'paladin':
+    elif classchoice == 'rogue':
+    elif classchoice == 'fighter':
+    elif classchoice == 'druid':
+    elif classchoice == 'barbarian':
+    elif classchoice == 'bard':
+    elif classchoice == 'cleric':
+    elif classchoice == 'monk':
+    elif classchoice == 'ranger':
+    elif classchoice == 'warlock':
+    elif classchoice == 'sorcerer':
+    elif classchoice == 'wizard':
